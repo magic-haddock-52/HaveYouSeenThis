@@ -2,8 +2,72 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+div {
+    margin: 0 auto;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    word-wrap: break-word;
+    margin: 10px;
+    margin-bottom: 25px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.action_button {
+    background-color: green;
+}
+.horror_button {
+    background-color: red;
+}
+.sci-fi_button {
+    background-color: blue;
+}
+.superhero_button {
+    background-color: orange;
+}
+.biopic_button {
+    background-color: purple;
+}
+.musical_button {
+    background-color: yellow;
+}
+
+
+
+
 a, .btn-link {
-    color: #006bb7;
+    color: white;     /* #006bb7 */
 }
 
 .btn-primary {

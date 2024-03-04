@@ -1,5 +1,46 @@
 ﻿@page "/"
+@using Microsoft.Maui.Controls
 
-<h1>Hello, world!</h1>
+<h1>Home Page</h1>
+
+<form>
+	<!--<label for="item_search"></label><br>-->
+	<input type="text" id="item_search" name="item_search"
+		   placeholder="Search for a film/show..."><br>
+</form>
+
+<h2>Genre</h2>
+
+<div class="row">
+	<div class="column">
+		<button type="button" class="action_button" onclick="LoadCounterPage">Action</button>
+		<button type="button" class="horror_button">Horror</button>
+	</div>
+</div>
+<div class="row">
+	<div class="column">
+		<button type="button" class="sci-fi_button">Sci-Fi</button>
+		<button type="button" class="superhero_button">Superhero</button>
+	</div>
+</div>
+<div class="row">
+	<div class="column">
+		<button type="button" class="biopic_button">
+			<NavLink class="nav-link" href="counter" Match="NavLinkMatch.All" color="white">
+				<span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Biopic
+			</NavLink> 
+		</button>
+		<button type="button" class="musical_button">Musical</button>
+	</div>
+	<!--
+	<div class="column">
+		<button type="button">Click Me!</button>
+		<button type="button">Click Me!</button>
+	</div>
+	-->
+</div>
+
 
 Welcome to your new app.
+
+
