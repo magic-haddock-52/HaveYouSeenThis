@@ -1,0 +1,1 @@
+A developing Expert System for recommending Film and Television. My aim is to improve upon basic recommender systems that select similar items based on arbirtary similarities, devoid completely of context.
